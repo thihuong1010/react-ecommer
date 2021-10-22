@@ -1,1 +1,12 @@
+#prod_title {
+    color: rgb(97, 94, 94);
+}
 
+#clear_check {
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.container {
+    padding-top: 60px;
+}

@@ -4,7 +4,7 @@ import Products from './Products';
 const Main = ({data}) => {
     return (
         <>
-        <h1 className="text-center mt-3">Products</h1>
+        <h3 className="text-center mt-3">Products</h3>
         <section className="container py-4">
                 <div className="row justify-content-center">
                     <Products data={data}/>

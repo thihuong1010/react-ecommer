@@ -13,13 +13,20 @@ const Cart = () => {
     cartTotal
   } = useCart();
 
-  if(isEmpty) return <h1 className="text-center">Your cart is Empty</h1>
+  /* set render when cart empty */
+  if(isEmpty) return <section className="py-4">
+    <div className="justify-content-center">
+      <div className="col-12">
+        <h3>Your cart is empty</h3>
+        </div>
+    </div>
+  </section>
 
   return (
-    <section className="py-4 container">
-      <div className="row justify-content-center">
+    <section className="py-4">
+      <div className="justify-content-center">
         <div className="col-12">
-          <h5>Cart ({totalUniqueItems}) totals Items: ({totalItems})</h5>
+          <h3>Cart ({totalUniqueItems}), totals Items ({totalItems})</h3>
           <table className="table table-light table-hover m-0">
             <tbody>
               {items.map((item, index) => {
@@ -49,7 +56,7 @@ const Cart = () => {
         <div className="col-auto ms-auto">
           <h3>Total price: $ {cartTotal}</h3>
         </div>
-        <div className="col-auto">
+        <div id="clear_check" className="col-auto">
           <button className="btn btn-danger m-2"
           onClick={() => emptyCart()}
           >Clear cart</button>
