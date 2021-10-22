@@ -21,10 +21,10 @@ function App() {
       <Navbar data={data}/>
       <div className="container">
         <div className="row">
-          <div className="col-sm-9">
+          <div className="col-sm-8">
             <Main data={data}/>
           </div>
-          <div className="col-sm-3">
+          <div className="col-sm-4">
             <Cart data={data}/>
           </div>
         </div>

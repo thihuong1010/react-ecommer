@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(198, 245, 252);
+}
+
 #prod_title {
     color: rgb(97, 94, 94);
 }
@@ -9,4 +13,9 @@
 
 .container {
     padding-top: 60px;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    background-color: rgb(151, 238, 251);
 }

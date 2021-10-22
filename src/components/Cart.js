@@ -26,7 +26,7 @@ const Cart = () => {
     <section className="py-4">
       <div className="justify-content-center">
         <div className="col-12">
-          <h3>Cart ({totalUniqueItems}), totals Items ({totalItems})</h3>
+          <h3>Cart ({totalUniqueItems}), total Items ({totalItems})</h3>
           <table className="table table-light table-hover m-0">
             <tbody>
               {items.map((item, index) => {
@@ -36,7 +36,7 @@ const Cart = () => {
                     <img src={item.image} alt="" style={{height: '3rem'}}/>
                   </td>
                   <td>{item.title}</td>
-                  <td>{item.price}</td>
+                  <td>$ {item.price}</td>
                   <td>Quantity: ({item.quantity})</td>
                   <td>
                     <button 

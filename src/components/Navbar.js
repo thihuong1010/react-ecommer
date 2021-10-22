@@ -7,7 +7,7 @@ const Navbar = () => {
     const { totalUniqueItems } = useCart();
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <nav className="navbar navbar-expand-lg navbar-light fixed-top">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#/">Droppe Xmas <FaTree/></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" 
