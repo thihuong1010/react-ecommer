@@ -9,7 +9,8 @@ const Cart = () => {
     totalItems,
     updateItemQuantity,
     removeItem,
-    emptyCart
+    emptyCart,
+    cartTotal
   } = useCart();
 
   if(isEmpty) return <h1 className="text-center">Your cart is Empty</h1>
@@ -44,6 +45,15 @@ const Cart = () => {
               })}
             </tbody>
           </table>
+        </div>
+        <div className="col-auto ms-auto">
+          <h3>Total price: $ {cartTotal}</h3>
+        </div>
+        <div className="col-auto">
+          <button className="btn btn-danger m-2"
+          onClick={() => emptyCart()}
+          >Clear cart</button>
+          <button className="btn btn-warning m-2">Check out</button>
         </div>
       </div>
     </section>
