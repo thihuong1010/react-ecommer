@@ -1,21 +1,16 @@
 import React from 'react';
-import Products from './Products';
-import Cart from './Cart';
+import Products from './Products'; 
 
 const Main = ({data}) => {
     return (
-        <div className="container">
-            <h1>Droppe Xmas</h1>
-            <hr/>
-            <div className="row">
-                <div className="col-sm-8">
+        <>
+        <h1 className="text-center mt-3">Products</h1>
+        <section className="container py-4">
+                <div className="row justify-content-center">
                     <Products data={data}/>
                 </div>
-                <div className="col-sm-4">
-                    <Cart/>
-                </div>
-            </div>
-        </div>
+        </section>
+        </>
     )
 }
 

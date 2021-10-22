@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import Main from './components/Main';
-import ProdsDetail from './components/ProdsDetail';
+import Cart from './components/Cart';
+import {CartProvider} from 'react-use-cart';
 
 function App() {
   /* fetch product */
@@ -14,14 +15,12 @@ function App() {
   }, []);
 
   return(
-    <Router>
-      <Route exact path="/">
-        <Main data={data}/>
-      </Route>
-      <Route path="/prods/id">
-        <ProdsDetail data={data}/>
-      </Route>
-    </Router>
+    <>
+    <CartProvider>
+      <Main data={data}/>
+      <Cart data={data}/>
+    </CartProvider>
+    </>
   );
 }
 

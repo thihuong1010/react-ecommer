@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import { useParams } from "react-router-dom";
 
-const ProdsDetail = () => {
+const CardDetail = ({data}) => {
+    let { id } = useParams();  
     return (
-        <div>
-            prods detail
-        </div>
+        <section className="detail">
+            <div className="container">
+                {data
+                .filter((prods) => prods.id === id)
+                .map((prods, index) => (
+                    <div key={index} className="cardDetail">
+                        {prods.title}
+                    </div>
+                ))}
+            </div>
+        </section>
     )
 }
 
-export default ProdsDetail
+export default CardDetail;
