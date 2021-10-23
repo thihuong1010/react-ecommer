@@ -1,6 +1,7 @@
 import React from 'react';
 import {FaTree} from 'react-icons/fa';
 import {BsFillSuitHeartFill} from 'react-icons/bs';
+import {BsFillCartFill} from 'react-icons/bs';
 import { useCart } from 'react-use-cart';
 
 const Navbar = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
                         <a className="nav-link" href="#/"><BsFillSuitHeartFill/></a>
                     </span>
                     <span className="navbar-text">
-                        <a className="nav-link" href="#/">Cart ({totalUniqueItems})</a>
+                        <a className="nav-link" href="#/"><BsFillCartFill/> ({totalUniqueItems})</a>
                     </span>
                     </div>
                 </div>
