@@ -11,7 +11,7 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light fixed-top">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#/">Droppe Xmas <FaTree id="fatree"/></a>
+                    <a className="navbar-brand" href="#/">Droppe Xmas <FaTree id="fatree"/> </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" 
                     data-bs-target="#navbarText" aria-controls="navbarText" 
                     aria-expanded="false" aria-label="Toggle navigation">
