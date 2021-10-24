@@ -35,7 +35,7 @@ function App() {
           </div>
         </Route>
         <Route path="/wishlist">
-          <Wishlist data={data}/>
+          <Wishlist/>
         </Route>
         <Route path="/cartgo">
           <Cartgo data={data}/>
