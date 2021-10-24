@@ -13,7 +13,7 @@ const Products = ({data}) => {
                     <h5 id="prod_title">{prods.title}</h5>
                     <h5>$ {prods.price}</h5>
                     <div className="btn-group" role="group" aria-label="Basic mixed styles example"> 
-                        <button type="button" className="btn btn-success" 
+                        <button id="addtocart" type="button" className="btn btn-success" 
                         onClick={() => addItem(prods)}>Add to cart</button>
                     </div>
                 </div>

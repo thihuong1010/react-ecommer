@@ -5,7 +5,7 @@ const Wishlist = () => {
     return (
         <>
         <Navbar/>
-        <div>
+        <div className="container">
             Wishlist
         </div>
         </>

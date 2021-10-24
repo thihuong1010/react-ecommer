@@ -55,14 +55,16 @@ const Cart = () => {
             </table>
           </div>
         </div>
-        <div className="col-auto ms-auto">
-          <h3>Total price: $ {cartTotal}</h3>
-        </div>
-        <div id="clear_check" className="col-auto">
-          <button className="btn btn-danger m-2"
-          onClick={() => emptyCart()}
-          >Clear cart</button>
-          <button className="btn btn-warning m-2">Check out</button>
+        <div className="text-center">
+          <div className="col-auto ms-auto">
+            <h4>Total price: $ {cartTotal}</h4>
+          </div>
+          <div id="clear_check" className="col-auto">
+            <button className="btn btn-danger m-2"
+            onClick={() => emptyCart()}
+            >Clear cart</button>
+            <button className="btn btn-warning m-2">Check out</button>
+          </div>
         </div>
       </div>
     </section>

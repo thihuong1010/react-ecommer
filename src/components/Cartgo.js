@@ -5,7 +5,7 @@ const Cartgo = () => {
     return (
         <>
         <Navbar/>
-        <div>
+        <div className="container">
             cart another page
         </div>
         </>

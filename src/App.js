@@ -5,6 +5,7 @@ import Cart from './components/Cart';
 import {CartProvider} from 'react-use-cart';
 import Wishlist from './components/Wishlist';
 import Cartgo from './components/Cartgo';
+import Navbar from './components/Navbar';
 
 function App() {
   /* fetch product */
@@ -21,6 +22,7 @@ function App() {
     <CartProvider>
       <Router>
         <Route exact path="/">
+          <Navbar data={data}/>
           <div className="container">
             <div className="row">
               <div className="col-sm-8">
@@ -33,10 +35,10 @@ function App() {
           </div>
         </Route>
         <Route path="/wishlist">
-          <Wishlist/>
+          <Wishlist data={data}/>
         </Route>
         <Route path="/cartgo">
-          <Cartgo/>
+          <Cartgo data={data}/>
         </Route>
       </Router>
     </CartProvider>
