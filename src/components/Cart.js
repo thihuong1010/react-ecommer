@@ -18,7 +18,7 @@ const Cart = () => {
     <div className="justify-content-center">
       <div className="col-12">
         <h4>Your cart is empty</h4>
-        </div>
+      </div>
     </div>
   </section>
 
