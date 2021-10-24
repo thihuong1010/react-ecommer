@@ -3,6 +3,7 @@ import {FaTree} from 'react-icons/fa';
 import {BsFillSuitHeartFill} from 'react-icons/bs';
 import {BsFillCartFill} from 'react-icons/bs';
 import { useCart } from 'react-use-cart';
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
     const { totalUniqueItems } = useCart();
@@ -10,7 +11,7 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light fixed-top">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#/">Droppe Xmas <FaTree/></a>
+                    <a className="navbar-brand" href="#/">Droppe Xmas <FaTree id="fatree"/></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" 
                     data-bs-target="#navbarText" aria-controls="navbarText" 
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -19,14 +20,14 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#/">Home</a>
+                            <Link id="home" to={`/`}>Home</Link>
                         </li>
                     </ul>
                     <span className="navbar-text">
-                        <a className="nav-link" href="#/"><BsFillSuitHeartFill/></a>
+                        <Link id="wishlist" to={`/wishlist`}><BsFillSuitHeartFill/></Link>
                     </span>
                     <span className="navbar-text">
-                        <a className="nav-link" href="#/"><BsFillCartFill/> ({totalUniqueItems})</a>
+                        <Link id="cartgo" to={`/cartgo`}><BsFillCartFill/>{totalUniqueItems}</Link>
                     </span>
                     </div>
                 </div>

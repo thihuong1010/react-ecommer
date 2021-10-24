@@ -19,3 +19,30 @@ body{
 nav {
     background-color: rgb(179, 243, 253);
 }
+
+#home {
+    text-decoration: none;
+    color: black;
+}
+
+#cartgo {
+    text-decoration: none;
+    padding-left: 1rem;
+    color: green;
+}
+
+#fatree {
+    color: green;
+}
+
+#wishlist {
+    color: rgb(250, 44, 44);
+}
+
+#cartinfo {
+    margin: 16px 0px 8px;
+}
+
+#table {
+    padding: 24px;
+}
