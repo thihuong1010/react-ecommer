@@ -20,18 +20,18 @@ function Wishlist() {
                 {carts.map((cart, index) => (
                     <div key={index} id="5carts">
                         <h5>ID {cart.id}</h5>
-                        {cart.products.map((subitem, i) => {
+                        <table className="table table-light table-hover m-0">
+                            <tbody>
+                            {cart.products.map((subitem, i) => {
                             return (
-                                <table className="table table-light table-hover m-0">
-                                    <tbody>
-                                        <tr key={i}>
-                                            <td>Product ID: {subitem.productId}</td>
-                                            <td>Quantity: {subitem.quantity}</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <tr key={i}>
+                                    <td>Product ID: {subitem.productId}</td>
+                                    <td>Quantity: {subitem.quantity}</td>
+                                </tr>
                             )
-                        })}
+                            })}
+                            </tbody>
+                        </table>
                     </div>
                 ))}
             </div>
