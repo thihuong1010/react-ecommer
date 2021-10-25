@@ -53,7 +53,7 @@ const Cart = () => {
                                 <button className="btn btn-danger ms-2"
                                 onClick={() => removeItem(item.id)}>Remove Item</button>
                                 </td>
-                        </tr>
+                            </tr>
                         )
                         })}
                     </tbody>
