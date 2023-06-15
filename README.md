@@ -25,9 +25,3 @@ The app is a small shopping cart using React.js to do
 Using React, React Hooks to build the project.
 Fetch data from API: useEffect()
 The app is styled by pure CSS and Bootstrap5 frame work
-
-## Live demo
-
-Link: https://tranquil-ravine-02325.herokuapp.com
-
-### I am still on project to make is better 
